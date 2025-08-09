@@ -67,11 +67,12 @@ public class Triangle {
     public double perimeters(){
        return this.getSideA()+this.getSideB()+this.getSideC();
     }
-//    protected boolean isRightAngled(){
-//
-//           return true;
-//
-//    }
+    public static boolean isRightAngled(int longSide ,int other1,int other2){
+            if(longSide*longSide== (other1*other1)+(other2*other2)){
+                return true;
+            }
+            return false;
+    }
 
     @Override
     public String toString() {
